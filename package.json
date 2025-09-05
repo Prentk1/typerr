@@ -1,0 +1,65 @@
+{
+  "name": "typerr",
+  "version": "1.0.0",
+  "description": "A Puppeteer utility for human-like typing simulation with natural delays, typos and real keyboard events.",
+  "keywords": [
+    "typerr",
+    "puppeteer",
+    "type",
+    "typing",
+    "human",
+    "human-like",
+    "keyboard",
+    "puppeteer-type",
+    "automation",
+    "anti-bot",
+    "form-filling",
+    "input",
+    "puppeteer-plugin"
+  ],
+  "homepage": "https://github.com/Prentk1/typerr#readme",
+  "bugs": {
+    "url": "https://github.com/Prentk1/typerr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prentk1/typerr.git"
+  },
+  "license": "MIT",
+  "author": "Prentk1",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "npm run build && jest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run format:check && npm run build && npm run test",
+    "precommit": "npm run format:check"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.29.6",
+    "@eslint/js": "^9.34.0",
+    "@types/jest": "^30.0.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
+    "jest": "^30.0.5",
+    "jest-environment-puppeteer": "^11.0.0",
+    "jest-puppeteer": "^11.0.0",
+    "prettier": "3.6.2",
+    "puppeteer": "^24.17.0",
+    "ts-jest": "^29.4.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0"
+  }
+}
