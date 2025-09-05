@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 module.exports = {
   launch: {
-    headless: false,
+    headless: true,
     devtools: false,
     args: [
       "--no-sandbox",
