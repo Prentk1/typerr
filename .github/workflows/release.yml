@@ -32,11 +32,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          registry-url: 'https://registry.npmjs.org'
 
       - run: npm install
       - run: npm run build
 
-      - name: Create Release PR or Publish
+      - name: Publish to NPM
         uses: changesets/action@v1
         with:
           publish: npx changeset publish
