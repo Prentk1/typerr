@@ -1,6 +1,9 @@
 {
   "name": "typerr",
   "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A Puppeteer utility for human-like typing simulation with natural delays, typos and real keyboard events.",
   "keywords": [
     "typerr",
